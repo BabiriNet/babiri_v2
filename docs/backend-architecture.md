@@ -10,7 +10,21 @@ The backend architecture processes the time-series usage and global ranking snap
 -   AWS API Gateway
 -   AWS Cloudwatch
 -   AWS Virtual Private Cloud
--   Redis
+-   AWS Elasticache
+
+# Microservice Architecture
+
+## Handler
+
+The handler layer validates the incoming request. Following validation, the request is transformed into an internal object.
+
+## Service
+
+The service layer handles the business logic.
+
+## DAO
+
+The DAO layer is responsible for interfacing with the database.
 
 # Database Schema
 
